@@ -1,223 +1,226 @@
-<html><head><base href="https://minhasapresentacoes.com.br/">
-<meta charset="UTF-8">
-<title>SlideStore - Templates Profissionais</title>
-<style>
-:root {
-  --primary: #2C3E50;
-  --accent: #E74C3C;
-  --light: #ECF0F1;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlideStore - Templates Profissionais</title>
+    <style>
+        :root {
+            --primary: #2C3E50;
+            --accent: #E74C3C;
+            --light: #ECF0F1;
+        }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body {
-  font-family: 'Poppins', sans-serif;
-  background: var(--light);
-}
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--light);
+        }
 
-.header {
-  background: var(--primary);
-  color: white;
-  padding: 1rem;
-  text-align: center;
-}
+        .header {
+            background: var(--primary);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
 
-.navbar {
-  background: white;
-  padding: 1rem;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
+        .navbar {
+            background: white;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
 
-.navbar ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-}
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
 
-.navbar a {
-  text-decoration: none;
-  color: var(--primary);
-  font-weight: 500;
-}
+        .navbar a {
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 500;
+        }
 
-.hero {
-  text-align: center;
-  padding: 4rem 1rem;
-  background: linear-gradient(45deg, var(--primary), var(--accent));
-  color: white;
-}
+        .hero {
+            text-align: center;
+            padding: 4rem 1rem;
+            background: linear-gradient(45deg, var(--primary), var(--accent));
+            color: white;
+        }
 
-.templates-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+        .templates-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-.template-card {
-  background: white;
-  border-radius: 10px;
-  overflow: hidden;
-  transition: transform 0.3s;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-}
+        .template-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
 
-.template-card:hover {
-  transform: translateY(-5px);
-}
+        .template-card:hover {
+            transform: translateY(-5px);
+        }
 
-.template-img {
-  width: 100%;
-  height: 200px;
-  background: #eee;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+        .template-img {
+            width: 100%;
+            height: 200px;
+            background: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-.template-info {
-  padding: 1rem;
-}
+        .template-info {
+            padding: 1rem;
+        }
 
-.price {
-  color: var(--accent);
-  font-size: 1.5rem;
-  font-weight: bold;
-}
+        .price {
+            color: var(--accent);
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
 
-.btn {
-  display: inline-block;
-  padding: 0.8rem 1.5rem;
-  background: var(--accent);
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background 0.3s;
-}
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: var(--accent);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
 
-.btn:hover {
-  background: #c0392b;
-}
+        .btn:hover {
+            background: #c0392b;
+        }
 
-@keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
-}
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
 
-.floating {
-  animation: float 3s ease-in-out infinite;
-}
-</style>
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
 </head>
 <body>
 
 <header class="header">
-  <h1>SlideStore</h1>
-  <p>Templates profissionais para suas apresentações</p>
+    <h1>SlideStore</h1>
+    <p>Templates profissionais para suas apresentações</p>
 </header>
 
 <nav class="navbar">
-  <ul>
-    <li><a href="https://minhasapresentacoes.com.br/">Início</a></li>
-    <li><a href="https://minhasapresentacoes.com.br/templates">Templates</a></li>
-    <li><a href="https://minhasapresentacoes.com.br/sobre">Sobre</a></li>
-    <li><a href="https://minhasapresentacoes.com.br/contato">Contato</a></li>
-  </ul>
+    <ul>
+        <li><a href="https://minhasapresentacoes.com.br/">Início</a></li>
+        <li><a href="https://minhasapresentacoes.com.br/templates">Templates</a></li>
+        <li><a href="https://minhasapresentacoes.com.br/sobre">Sobre</a></li>
+        <li><a href="https://minhasapresentacoes.com.br/contato">Contato</a></li>
+    </ul>
 </nav>
 
 <section class="hero">
-  <h2 class="floating">Templates Profissionais a partir de R$ 3,00</h2>
-  <p>Eleve suas apresentações ao próximo nível</p>
-  <br>
-  <a href="https://minhasapresentacoes.com.br/templates" class="btn">Ver Templates</a>
+    <h2 class="floating">Templates Profissionais a partir de R$ 3,00</h2>
+    <p>Eleve suas apresentações ao próximo nível</p>
+    <br>
+    <a href="https://minhasapresentacoes.com.br/templates" class="btn">Ver Templates</a>
 </section>
 
 <main class="templates-grid">
-  <article class="template-card">
-    <div class="template-img">
-      <svg width="100" height="100" viewBox="0 0 100 100">
-        <rect x="10" y="10" width="80" height="60" fill="#3498db"/>
-        <rect x="20" y="30" width="60" height="5" fill="white"/>
-        <rect x="20" y="40" width="40" height="5" fill="white"/>
-      </svg>
-    </div>
-    <div class="template-info">
-      <h3>Template Básico</h3>
-      <p>Ideal para apresentações simples e diretas</p>
-      <p class="price">R$ 3,00</p>
-      <br>
-      <a href="https://minhasapresentacoes.com.br/comprar/basico" class="btn">Comprar</a>
-    </div>
-  </article>
+    <article class="template-card">
+        <div class="template-img">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+                <rect x="10" y="10" width="80" height="60" fill="#3498db"/>
+                <rect x="20" y="30" width="60" height="5" fill="white"/>
+                <rect x="20" y="40" width="40" height="5" fill="white"/>
+            </svg>
+        </div>
+        <div class="template-info">
+            <h3>Template Básico</h3>
+            <p>Ideal para apresentações simples e diretas</p>
+            <p class="price">R$ 3,00</p>
+            <br>
+            <a href="https://minhasapresentacoes.com.br/comprar/basico" class="btn">Comprar</a>
+        </div>
+    </article>
 
-  <article class="template-card">
-    <div class="template-img">
-      <svg width="100" height="100" viewBox="0 0 100 100">
-        <rect x="10" y="10" width="80" height="60" fill="#2ecc71"/>
-        <circle cx="30" cy="40" r="10" fill="white"/>
-        <rect x="45" y="30" width="35" height="5" fill="white"/>
-        <rect x="45" y="40" width="25" height="5" fill="white"/>
-      </svg>
-    </div>
-    <div class="template-info">
-      <h3>Template Profissional</h3>
-      <p>Design moderno com elementos interativos</p>
-      <p class="price">R$ 12,00</p>
-      <br>
-      <a href="https://minhasapresentacoes.com.br/comprar/profissional" class="btn">Comprar</a>
-    </div>
-  </article>
+    <article class="template-card">
+        <div class="template-img">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+                <rect x="10" y="10" width="80" height="60" fill="#2ecc71"/>
+                <circle cx="30" cy="40" r="10" fill="white"/>
+                <rect x="45" y="30" width="35" height="5" fill="white"/>
+                <rect x="45" y="40" width="25" height="5" fill="white"/>
+            </svg>
+        </div>
+        <div class="template-info">
+            <h3>Template Profissional</h3>
+            <p>Design moderno com elementos interativos</p>
+            <p class="price">R$ 12,00</p>
+            <br>
+            <a href="https://minhasapresentacoes.com.br/comprar/profissional" class="btn">Comprar</a>
+        </div>
+    </article>
 
-  <article class="template-card">
-    <div class="template-img">
-      <svg width="100" height="100" viewBox="0 0 100 100">
-        <rect x="10" y="10" width="80" height="60" fill="#9b59b6"/>
-        <polygon points="25,30 45,30 35,45" fill="white"/>
-        <rect x="50" y="30" width="30" height="5" fill="white"/>
-        <rect x="50" y="40" width="20" height="5" fill="white"/>
-      </svg>
-    </div>
-    <div class="template-info">
-      <h3>Template Premium</h3>
-      <p>Recursos avançados e animações exclusivas</p>
-      <p class="price">R$ 20,00</p>
-      <br>
-      <a href="https://minhasapresentacoes.com.br/comprar/premium" class="btn">Comprar</a>
-    </div>
-  </article>
+    <article class="template-card">
+        <div class="template-img">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+                <rect x="10" y="10" width="80" height="60" fill="#9b59b6"/>
+                <polygon points="25,30 45,30 35,45" fill="white"/>
+                <rect x="50" y="30" width="30" height="5" fill="white"/>
+                <rect x="50" y="40" width="20" height="5" fill="white"/>
+            </svg>
+        </div>
+        <div class="template-info">
+            <h3>Template Premium</h3>
+            <p>Recursos avançados e animações exclusivas</p>
+            <p class="price">R$ 20,00</p>
+            <br>
+            <a href="https://minhasapresentacoes.com.br/comprar/premium" class="btn">Comprar</a>
+        </div>
+    </article>
 </main>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  // Adiciona efeito de hover nos cards
-  const cards = document.querySelectorAll('.template-card');
-  cards.forEach(card => {
-    card.addEventListener('mouseover', function() {
-      this.style.transform = 'translateY(-10px)';
-    });
-    card.addEventListener('mouseout', function() {
-      this.style.transform = 'translateY(0)';
-    });
-  });
+    document.addEventListener('DOMContentLoaded', function() {
+        // Adiciona efeito de hover nos cards
+        const cards = document.querySelectorAll('.template-card');
+        cards.forEach(card => {
+            card.addEventListener('mouseover', function() {
+                this.style.transform = 'translateY(-10px)';
+            });
+            card.addEventListener('mouseout', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
 
-  // Adiciona smooth scroll para os links
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
-      });
+        // Adiciona smooth scroll para os links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
     });
-  });
-});
 </script>
 
 </body>
